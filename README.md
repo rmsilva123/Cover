@@ -1,8 +1,8 @@
-# Cover: unsupervised training set sampling and compression using a diversity strategy
+# Cover: Unsupervised Training Set Sampling and Compression Using a Diversity Strategy
  
 This is a simple Perl implementation of the algorithm proposed in [Silva, R.M., Gomes,  G.C.,  Alvim,  M.S.,  Gon ̧calves,  M.A.,  2016.  Compression-based  selective  sampling  for  learning  to rank, in:  Proceedings of the 25th ACM International on Conference on Information and Knowledge Management, ACM, New York, NY, USA. pp. 247–256.]
 
-The method can be used to select a user-defined number of "data items" (i.e. n-dimensional vectors representing, for instance, query-document pairs).
+The method can be used to select a user-defined number of "data items" (i.e. n-dimensional vectors representing, for instance, query-document pairs) from a training set. The selected set can then be used to train a Machine Learning method to rank (or classify) unseen test sets. Cover has a similar objective as techniques know as Active Learning, but differently from these, it does not need LABELS in order to select interesting or informative samples (i.e. it is unsupervised). 
 
 Parameters are: original training set, emst file, size of selection (optional: "noqid" to indicate that this is a classification training set)
 OUTPUT: file named "selectedset-SELSIZE.txt" written to current directory and containing the selected instances
