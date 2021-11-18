@@ -1,4 +1,4 @@
-#Cover: unsupervised training set sampling and compression using a diversity strategy
+# Cover: unsupervised training set sampling and compression using a diversity strategy
  
 This is a simple Perl implementation of the algorithm proposed in [Silva, R.M., Gomes,  G.C.,  Alvim,  M.S.,  Gon ̧calves,  M.A.,  2016.  Compression-based  selective  sampling  for  learning  to rank, in:  Proceedings of the 25th ACM International on Conference on Information and Knowledge Management, ACM, New York, NY, USA. pp. 247–256.]
 
