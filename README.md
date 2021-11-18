@@ -1,4 +1,4 @@
-Cover: unsupervised training set sampling and compression using a diversity strategy
+#Cover: unsupervised training set sampling and compression using a diversity strategy
  
 This is a simple Perl implementation of the algorithm proposed in [Silva, R.M., Gomes,  G.C.,  Alvim,  M.S.,  Gon ̧calves,  M.A.,  2016.  Compression-based  selective  sampling  for  learning  to rank, in:  Proceedings of the 25th ACM International on Conference on Information and Knowledge Management, ACM, New York, NY, USA. pp. 247–256.]
 
@@ -8,7 +8,7 @@ Parameters are: original training set, emst file, size of selection (optional: "
 OUTPUT: file named "selectedset-SELSIZE.txt" written to current directory and containing the selected instances
  
 EXAMPLE:
-#> ./cover.pl train.txt emst.csv 5000 
+> ./cover.pl train.txt emst.csv 5000 
 where ẗrain.txt is the original training set (in LETOR/MSLR10K format), "emst.csv" is the output of the "emst" program (See below) and "5000" is the desired number of instances in the final selected set.
 
  
@@ -27,7 +27,7 @@ EMST FILE
 emst file must contain the list of edges with ascending order by size and indexed by 0 (i.e. first instance in training file is numbered 0)
 
 EXAMPLE EMST FILE LINE:
-# instance X	     , instance Y	  , edge length
+instance X	     , instance Y	  , edge length
 1.89830000000000e+04,1.90430000000000e+04,0.00000000000000e+00
 
 EMST file can be created using the "emst" program in mlpack (https://github.com/mlpack/mlpack or http://www.mlpack.org)
