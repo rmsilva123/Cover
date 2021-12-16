@@ -99,7 +99,9 @@ while (my $linetrain = <F1>) {
 	for (my $i=0; $i<=$#features; $i++) { # each line must end with a feature or this loop will grab garbage from the end of the line.
 		my ($fid, $val) = split ":", $features[$i];
 		# array containing each feature value (coordinate)
-		push (@allfeat, $val); 
+		if (defined($val)) { # checks anyway if we have a valid fid:value pair
+			push (@allfeat, $val); 
+		} 
 	}
 	# array of arrays with every instance coordinates
 	push (@unlabeledset, \@allfeat);
